@@ -20,6 +20,10 @@ Adds further source to community events and news to the admin dashboard widget. 
 
 == Frequently Asked Questions ==
 
+= External events are not showing up =
+
+The events listings are cached in your WordPress database for about 12 hours. Check back tomorrow, and if they're still not there please raise a support ticket.
+
 = Why does it only show one event from the external feed? =
 
 I've not got round to that yet

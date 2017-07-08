@@ -50,10 +50,10 @@ function is_community_events_call( $url ) {
 function is_near_london( $lat, $long ) {
 	$london_lat = 51.51279;
 	$london_long = -0.09184;
-	if ( ( $lat > ( $london_lat - 1 ) ) &&
-			 ( $lat < ( $london_lat + 1 ) ) &&
-			 ( $long > ( $london_long - 1 ) ) &&
-			 ( $long < ( $london_long + 1 ) ) ) {
+	if ( ( $lat > ( $london_lat - 1.8 ) ) &&
+			 ( $lat < ( $london_lat + 1.8 ) ) &&
+			 ( $long > ( $london_long - 1.8 ) ) &&
+			 ( $long < ( $london_long + 1.8 ) ) ) {
 		return true;
 	} else {
 		return false;
