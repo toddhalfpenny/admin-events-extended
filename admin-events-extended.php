@@ -149,6 +149,8 @@ function aee_handle_http_requests( $response, $args, $url ) {
 		}
 	}
 
+	return $response;
+
 	/*
 	Write into logfile
 	file_put_contents( $logfile, sprintf( "### %s, URL: %s\nREQUEST: %sRESPONSE: %s\n", date( 'c' ), $url, print_r( $args, true ), print_r( $log_response, true ) ), FILE_APPEND );

@@ -20,15 +20,20 @@ Adds further source to community events and news to the admin dashboard widget. 
 
 == Frequently Asked Questions ==
 
-= How can I remove the bullet points which appear next to each widget? =
+= Why does it only show one event from the external feed? =
 
-Simply select the 'Enable Styling' setting in the Widgets on Pages options page.
+I've not got round to that yet
 
+== Roadmap or maybes ==
 
+1. Order events correctly by date
+1. Support for more than just WordPress London
+1. Support for external news feeds also
+1. Move to nice WordPress Plugin Boilerplate structure
 
 == Screenshots ==
 
-1. Setting up the sidebars.
+1. No dashboard widget in action, showing WordPress London events.
 
 
 == Changelog ==
