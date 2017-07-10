@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/class-admin-events-extended-activator.php
  */
-function activate_plugin_name() {
+function activate_admin_events_extended() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-admin-events-extended-activator.php';
 	Admin_Events_Extended_Activator::activate();
 }
@@ -42,13 +42,13 @@ function activate_plugin_name() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-admin-events-extended-deactivator.php
  */
-function deactivate_plugin_name() {
+function deactivate_admin_events_extended() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-admin-events-extended-deactivator.php';
 	Admin_Events_Extended_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+register_activation_hook( __FILE__, 'activate_admin_events_extended' );
+register_deactivation_hook( __FILE__, 'deactivate_admin_events_extended' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -65,10 +65,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-admin-events-extended.php'
  *
  * @since    0.0.1
  */
-function run_plugin_name() {
+function run_admin_events_extended() {
 
 	$plugin = new Admin_Events_Extended();
 	$plugin->run();
 
 }
-run_plugin_name();
+run_admin_events_extended();
